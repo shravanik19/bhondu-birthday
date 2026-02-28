@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Happy Birthday 💖</title>
+<title>Happy Birthday My Bhondu 💖</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -13,14 +13,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* LIGHT PINK BACKGROUND */
 body{
   background:#ffe6f0;
   overflow-x:hidden;
-  color:#000;   /* BLACK FONT */
+  color:#000;
 }
 
-/* SECTION */
 section{
   height:100vh;
   display:flex;
@@ -31,9 +29,8 @@ section{
   position:relative;
 }
 
-/* GLASS CARD */
 .card{
-  background:rgba(255,255,255,0.6);
+  background:rgba(255,255,255,0.7);
   backdrop-filter:blur(10px);
   padding:60px 40px;
   border-radius:25px;
@@ -45,13 +42,11 @@ section{
 h1{
   font-size:2.2rem;
   margin-bottom:20px;
-  color:#000;
 }
 
 p{
   font-size:1.1rem;
   margin-top:10px;
-  color:#000;
 }
 
 button{
@@ -69,7 +64,7 @@ button:hover{
   transform:scale(1.1);
 }
 
-/* CAKE */
+/* Cake */
 .cake-container{
   margin:40px auto;
   display:flex;
@@ -84,23 +79,40 @@ button:hover{
   50%{transform:translateY(-20px);}
 }
 
-/* GALLERY */
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:10px;
-  margin-top:20px;
-}
-.gallery img{
-  width:100%;
-  border-radius:15px;
-  transition:0.4s;
-}
-.gallery img:hover{
-  transform:scale(1.08);
+/* Nickname Slide */
+.subtitle{
+  font-size:1rem;
+  margin-bottom:20px;
 }
 
-/* LETTER */
+.nickname-box{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:12px;
+  margin:20px 0;
+}
+
+.nickname{
+  background:#ffb6d9;
+  padding:10px 18px;
+  border-radius:30px;
+  font-weight:bold;
+  animation:pop 2s infinite alternate;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+@keyframes pop{
+  from{transform:scale(1);}
+  to{transform:scale(1.08);}
+}
+
+.wish-text{
+  margin-top:20px;
+  font-weight:500;
+}
+
+/* Letter */
 .letter-box{
   max-height:300px;
   overflow-y:auto;
@@ -110,10 +122,9 @@ button:hover{
   background:rgba(255,255,255,0.5);
   border-radius:20px;
   line-height:1.8;
-  color:#000;
 }
 
-/* FINAL GLOW */
+/* Final Glow */
 .final-text{
   font-size:2rem;
   font-weight:bold;
@@ -124,7 +135,7 @@ button:hover{
   to{text-shadow:0 0 20px #ff69b4;}
 }
 
-/* CONFETTI */
+/* Confetti */
 .confetti{
   position:fixed;
   width:10px;
@@ -136,7 +147,7 @@ button:hover{
   to{transform:translateY(100vh) rotate(360deg);}
 }
 
-/* 🎈 BALLOONS */
+/* Balloons */
 .balloon{
   position:fixed;
   bottom:-100px;
@@ -155,7 +166,7 @@ button:hover{
 <!-- HERO -->
 <section>
   <div class="card">
-    <h1>🎉 Happy Birthday My Bundi ke ladu 💖</h1>
+    <h1>🎉 Happy Birthday My Bhondu 💖</h1>
     <div class="cake-container">
       <div class="cake">🎂</div>
     </div>
@@ -167,25 +178,35 @@ button:hover{
 <!-- ABOUT -->
 <section>
   <div class="card">
-    <h1>You Mean Very precious for me 💗</h1>
-    <p> Tu hera hai mera !!<br>
-      You are not just my best friend...  
-      you are my comfort, my safe place,  
+    <h1>Ur very Important for Me 💗</h1>
+    <p> ur very precious ..Tu hera he mera !!<br><br>
+      You are my comfort, my safe place,
       my biggest smile and my forever favorite person 💕
     </p>
   </div>
 </section>
 
-<!-- MEMORIES -->
+<!-- NICKNAME SLIDE -->
 <section>
   <div class="card">
-    <h1>Our Beautiful Memories 📸✨</h1>
-    <div class="gallery">
-      <img src="D:\New folder\f5.jpeg">
-      <img src="D:\New folder\f2.jpeg">
-      <img src="D:\New folder\f3.jpeg">
-      <img src="D:\New folder\f4.jpeg">
+    <h1>Only I Call You This 😌💖</h1>
+    <p class="subtitle">My favorite names for my favorite person</p>
+
+    <div class="nickname-box">
+      <div class="nickname">Bhondu 💗</div>
+      <div class="nickname">Kumbhakran🥺</div>
+      <div class="nickname">Rasagulle 👑</div>
+      <div class="nickname">Chai🤭</div>
+      <div class="nickname">Shampyy ☀️</div>
+      <div class="nickname">Pookie💞</div>
+      <div class="nickname">Chinu🌍</div>
     </div>
+
+    <p class="wish-text">
+      Happy Birthday to my Rasgulle 💖✨  
+      No matter what I call you…
+      you will always be MY person 💕
+    </p>
   </div>
 </section>
 
@@ -194,7 +215,8 @@ button:hover{
   <div class="card">
     <h1>A Message From My Heart 💌</h1>
     <div class="letter-box">
-      Thanku soo much yaar us din java ki notebook dene ke liye, agr us din tu vo notebook muje nhi deta n to aaj tere sath tera ye sir dard n rehata.... but yec kehsakter hai hum ant bhala to sab bhala... yaarr bohot kuch kehna haii but kya kahu samaj nhii aa raha... Tuje pata he mene chai chodane ka kitni bar try kiya haii , but nhi chod pai yahi kehne vale the n.. hnn nhi chod pai mai chai.. aise hi tu mere liye chai ki tarah haii ... tu meri adat haii yaarr.. rat koo sone se pehle good night bolne ki adat, subah uth kr good morning bolne ki adat, din bhar kya kr rahe ho puchne ki adat , or mere sath kisne kya kya kiya vo batane ki adat,rat ko sar adin ka sirdard batane ki adat.. tu mere lie meri chai haii..idk ki ky hee ye connection but hee kuch to... bs i wish hum ikdusre ke liye koi sabak vale nhi forever vale ho.. nahi pata age kya hoga .. bs yee pata haii hum nhi badalenge.. shuuuu oyee bhondu sach mai tere ankh mai pani to nhi aya n kyunki ye likhte vakt mere aa raha haii.. abb chal tu bhi ponch ansu.. aaj tera day haii. its very special for us .. ha mere liye he special.. chal abb ik pyari si smile do ... yee kesi smile haii.. mene pyari si real vali kaha ... haa right ye hiii..yes that's like good boy.. and most imp HAPPIEST BIRTHDAY BABY 💖💖<br><br>
+      I don't even know where to start… 💖<br><br>
+      Thanku soo much yaar us din java ki notebook dene ke liye, agr us din tu vo notebook muje nhi deta n to aaj tere sath tera ye sir dard n rehata.... but yec kehsakter hai hum ant bhala to sab bhala... yaarr bohot kuch kehna haii but kya kahu samaj nhii aa raha... Tuje pata he mene chai chodane ka kitni bar try kiya haii , but nhi chod pai yahi kehne vale the n.. hnn nhi chod pai mai chai.. aise hi tu mere liye chai ki tarah haii ... tu meri adat haii yaarr.. rat koo sone se pehle good night bolne ki adat, subah uth kr good morning bolne ki adat, din bhar kya kr rahe ho puchne ki adat , or mere sath kisne kya kya kiya vo batane ki adat,rat ko sar adin ka sirdard batane ki adat.. tu mere lie meri chai haii..idk ki ky hee ye connection but hee kuch to... bs i wish hum ikdusre ke liye koi sabak vale nhi forever vale ho.. nahi pata age kya hoga .. bs yee pata haii hum nhi badalenge.. shuuuu oyee bhondu sach mai tere ankh mai pani to nhi aya n kyunki ye likhte vakt mere aa raha haii.. abb chal tu bhi ponch ansu.. aaj tera day haii. its very special for us .. ha mere liye he special.. chal abb ik pyari si smile do ... yee kesi smile haii.. mene pyari si real vali kaha ... haa right ye hiii..yes that's like good boy.. and most imp HAPPIEST BIRTHDAY BABY 💖...
       Thank you for always being there for me.<br><br>
       Thank you for understanding me without words.<br><br>
       I promise to always stay beside you forever 💕
@@ -216,8 +238,8 @@ button:hover{
 <!-- FINAL -->
 <section>
   <div class="card">
-    <div class="final-text"> 
-        HAPPIEST BIRTHDAY Babyy...ILYSM 💖
+    <div class="final-text">
+     HAPPIEST BIRTHDAY BABYY❤️✨💖🔥
     </div>
   </div>
 </section>
@@ -239,7 +261,7 @@ function blastConfetti(){
   }
 }
 
-/* 🎈 Create Balloons */
+/* Balloons */
 for(let i=0;i<20;i++){
   let balloon=document.createElement("div");
   balloon.classList.add("balloon");
